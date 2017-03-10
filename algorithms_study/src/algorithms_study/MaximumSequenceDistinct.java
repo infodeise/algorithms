@@ -17,7 +17,7 @@ public class MaximumSequenceDistinct {
 	}
 
 	public static void main(String[] args) {
-		Tree t = new Tree(4, new Tree(5, new Tree(3, new Tree(1, null, null), null), null), 
+		Tree t = new Tree(4, new Tree(5, new Tree(3, new Tree(4, null, null), new Tree(8, null, null)), null), 
 				new Tree(6, new Tree(5, null, null), new Tree(6, null, null)));
 		System.out.println(countRight(t));
 		
