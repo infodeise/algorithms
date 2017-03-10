@@ -2,12 +2,15 @@ package algorithms_study;
 
 import java.util.HashMap;
 
+//Discover how many turns the player A won
+// Each player play play a turn and the winner is who get the bigger card
+//Cards hierarchy: A K Q J T(10) 9-2
 public class DeckCard {
 	private static HashMap<String, Integer> mapDeck = new HashMap<String, Integer>();
 	public static void main(String[] args) {
 
 		String A = "23A84Q";//[1...1000]
-		String B = "K2Q25J";// 2-9 T J Q K A tamanho igual string A e B
+		String B = "K2Q25J";// 2-9 T J Q K A same size String A e B
 		
 		System.out.println("A ganhou "+countWinturns(A, B)+" turnos");
 		
